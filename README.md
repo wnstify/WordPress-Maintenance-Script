@@ -1,6 +1,23 @@
 # WordPress-Maintenance-Script
 This script is designed to automate the maintenance process for WordPress installations on a server. It verifies the integrity of WordPress core files, filters out common non-critical warnings, logs any discrepancies found, and sends a detailed report via email if any issues are detected. It's intended to help website administrators maintain the security and integrity of their WordPress sites efficiently.
 
+## :warning: Important Warning
+
+Before using this script, please be aware of the following important considerations:
+
+- **Data Safety**: Ensure you have **backups** of your WordPress installations. While this script is designed to enhance security and integrity by checking for file discrepancies, it's crucial to have a rollback plan.
+
+- **Testing Environment**: It's highly recommended to **test the script in a controlled environment** before deploying it on a production server. This ensures that it behaves as expected and does not inadvertently affect your live sites.
+
+- **Email Configuration**: This script sends reports via email. Ensure that your server is configured to send emails and that the email address specified in the script is correct and capable of receiving emails.
+
+- **Permissions**: Running this script requires certain permissions. Make sure the user executing the script has the necessary permissions to access and modify the WordPress installations.
+
+- **Customization**: Review and customize the script as necessary for your environment. This includes setting the correct email address, adjusting the path to your WordPress installations, and potentially modifying the cron job schedule.
+
+Failure to adhere to these considerations could result in unintended consequences for your WordPress installations. Use this script responsibly and at your own risk.
+
+
 ## How It Works
 
 The script performs the following actions:
