@@ -26,7 +26,7 @@ The script performs the following actions:
 - **Verifies** the integrity of WordPress core files against the official WordPress version to ensure they haven't been altered or corrupted.
 - **Ignores** common but non-critical warnings like missing or extra files that are known and often intentional.
 - **Logs** any discrepancies or potential security issues found during the verification process.
-- **Sends** a detailed HTML email report if issues are detected, highlighting the affected WordPress installations for further action. **Make sure to have SSMTP configured!**
+- **Sends** a detailed HTML email report if issues are detected, highlighting the affected WordPress installations for further action. **Make sure to have SSMTP configured!** Check my repo for [ssmtp configuration](https://github.com/wnstify/ssh-login-email-alert.git)
 - Automatically **runs every 12 hours** to ensure ongoing monitoring and security.
 
 ## Installation
