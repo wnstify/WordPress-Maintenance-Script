@@ -26,7 +26,7 @@ The script performs the following actions:
 - **Verifies** the integrity of WordPress core files against the official WordPress version to ensure they haven't been altered or corrupted.
 - **Ignores** common but non-critical warnings like missing or extra files that are known and often intentional.
 - **Logs** any discrepancies or potential security issues found during the verification process.
-- **Sends** a detailed HTML email report if issues are detected, highlighting the affected WordPress installations for further action.
+- **Sends** a detailed HTML email report if issues are detected, highlighting the affected WordPress installations for further action. **Make sure to have SSMTP configured!**
 - Automatically **runs every 12 hours** to ensure ongoing monitoring and security.
 
 ## Installation
@@ -36,7 +36,7 @@ To use this script, follow these steps:
 1. **Download the Script**: Clone this repository or download the script file directly to your server.
 
     ```
-    git clone https://github.com/yourusername/yourrepositoryname.git
+    git clone https://github.com/wnstify/WordPress-Maintenance-Script.git
     ```
 
 2. **Make the Script Executable**: Change the script's permissions to make it executable.
@@ -47,11 +47,12 @@ To use this script, follow these steps:
 
 3. **Configure Email Address**: Edit the script to include your email address where you'd like to receive notifications.
 
-4. **Set Up Cron Job**: Schedule the script to run automatically every 12 hours.
+4. **Set Up Cron Job**: Schedule the script to run automatically every 12 hours or run it straight away.
 
     ```
     crontab -e
     0 */12 * * * /path/to/wp_maintenance.sh
+    ./wp_maintenance.sh
     ```
 
 ## Usage
