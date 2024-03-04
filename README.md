@@ -86,7 +86,7 @@ Contributions to improve the script and add new features are welcome. If you hav
 
 6. **Submit a Pull Request**: Go to the original repository you forked, switch to your branch, and click 'Pull request'.
 
-For more information on contributing, please read the CONTRIBUTING.md file (if available) in the repository.
+For more information on contributing, please read the [CONTRIBUTING.md](https://github.com/wnstify/WordPress-Maintenance-Script/blob/main/CONTRIBUTING.md) file (if available) in the repository.
 
 ## License
 
